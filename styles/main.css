@@ -1,0 +1,45 @@
+
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;
+    color: black;
+}
+
+h2 {
+    font-size: 23px;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    max-width: 850px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: steelblue;
+    color: whitesmoke;
+}
+
+header img {
+    width: smaller;
+    height: smaller;
+    float: right;
+}
+
+footer {
+    font-size: medium;
+}
+
+#lastModified {
+    color: springgreen;
+}
