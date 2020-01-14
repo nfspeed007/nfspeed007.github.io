@@ -1,5 +1,5 @@
 // displays the current year
-document.getElementById('year').innerText = new Date().getFullYear();
+document.getElementById('year').innerHTML = new Date().getFullYear();
 
 // displays when the page was last modified
-document.getElementById('lastModified').innerText = document.lastModified;
+document.getElementById('lastModified').innerHTML = document.lastModified;
