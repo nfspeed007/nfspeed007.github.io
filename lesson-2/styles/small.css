@@ -58,6 +58,6 @@ p {
 
 /* id selector */
 
-#article-1 {
+#article-1, #article-2, #article-3 {
     text-align: left;
 }
