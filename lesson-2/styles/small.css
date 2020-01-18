@@ -50,10 +50,5 @@ h4, a {
 p {
     padding: 10px;
     font-size: 20px;
-}
-
-/* id selector */
-
-#article-1, #article-2, #article-3 {
     text-align: left;
 }
