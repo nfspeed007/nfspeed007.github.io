@@ -1,0 +1,63 @@
+/* html selectors */
+
+body {
+    background-color: lavender;
+    font-family: 'Amatic SC', cursive;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+    padding: 30px;
+}
+
+img {
+    width: 65%;
+    padding-top: 20px;
+}
+
+header, main {
+    text-align: center;
+}
+
+section {
+    border: 8px outset cornflowerblue;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    box-shadow: 10px 10px 5px #363d26;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+    border-bottom: 0.75px solid whitesmoke;
+    text-align: center;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+a {
+    font-size: 25px;
+}
+
+p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* id selector */
+
+#article-1 {
+    text-align: left;
+}
