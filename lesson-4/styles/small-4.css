@@ -67,6 +67,14 @@ section {
     margin-top: 10px;
 }
 
+a:active {
+    background-color: #a3b7af;
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    display: inline-block;
+}
+
 a:hover {
     background-color: #a3b7af;
     color: white;
