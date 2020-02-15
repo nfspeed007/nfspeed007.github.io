@@ -184,3 +184,7 @@ aside {
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
+#five-day-forecast {
+    display: none;
+}
