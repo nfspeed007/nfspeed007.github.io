@@ -18,4 +18,8 @@
     iframe{
         display: block;
     }
+
+    #five-day-forecast {
+        display: block;
+    }
 }
