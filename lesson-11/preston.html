@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
-<body>
+<body onload="getEvents('Preston'); getCurrentWeather('5604473'); getFiveDayForecast('5604473')">
     <header>
         <img src="images/weather_icon.png" alt="weather logo">
         <div class="header">
@@ -25,8 +25,8 @@
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -34,13 +34,13 @@
     <main>
         <h1 id="preston">Preston</h1>
         <section id="hero">
-            <!--<img src="images/sunshine-clouds-wheatfield.jpg" alt="sunlight breaking through clouds">-->
-            <picture>
+            <img src="images/sunshine-clouds-wheatfield.jpg" alt="sunlight breaking through clouds">
+            <!--<picture>
                 <source srcset="images/hero_small.jpg" media ="(max-width: 500px)">
                 <source srcset="images/hero_medium.jpg" media="(max-width: 780px)">
                 <source srcset="images/hero_large.jpg" media="(max-width: 1050px)">
                 <img src="images/hero_large.jpg" alt="hero image">
-            </picture>
+            </picture>-->
             <article id="weather-summary">
                 <h2>Weather Summary</h2>
                 <div>
@@ -96,18 +96,25 @@
                 </tr>
             </table>
         </section>
+        <section id="events">
+            <h3>Upcoming Events:</h3>
+            <hr>
+            <ul id="event">
+            </ul>
+        </section>
         <section id="article">
             <img src="images/preston-id.jpg" alt="Preston, ID">
+            <h3>Festival of Lights</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Eos aspernatur earum fugit reiciendis hic dolorum reprehenderit. 
-                Porro animi, aliquam dolorum aperiam adipisci aspernatur laboriosam delectus dolores, 
-                mollitia quibusdam officiis iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Harum, necessitatibus. Ab quisquam quidem dolorem corrupti aliquid, laborum aut. 
-                Cupiditate eius ea inventore ad nobis deleniti id excepturi labore veritatis quisquam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit dolore, 
-                expedita id officiis eius voluptas dicta fugiat, consectetur dolorem quia commodi similique vero 
-                exercitationem dignissimos mollitia suscipit ut incidunt.
+                ​Many hands make light work, as the old saying goes.  That surely applies when it comes to staging The Idaho Festival of Lights. <br><br>
+                But two men, both of whom have departed this life, were responsible for planting the seed, getting people to see the vision, turning on the lights and moving onward over 20 years ago.  
+                Wayne Bell and Walter Ross both were champions of the Festival, and were driving forces in its creation - with a community willing and ready to pick up the torch and make it happen.  
+                They were co-publishers of the The Preston Citizen for several decades. But they also both served terms as mayor of Preston, and on various civic committees and endeavors over the years. <br><br>
+                It was actually the widening of State Street, and resultant removal of all of the light poles that used to don the city's Christmas lights, that spawned the idea for the festival, Bell said.  
+                "They put the highway through, widened the street, took out all of the light poles.  That took out all the Christmas lights that used to go across the street.  There was nothing (remaining)," he said. <br><br>
+                Armed with about $500 from the Chamber of Commerce, along with some funds from the City of Preston, the new celebration started to take shape, first as an idea and quickly in reality, Bell recalled.  
+                "We have these little holes in the sidewalk of the flags.  I decided we'd get Christmas trees to put in them.  We had a light wire above, hung colored spotlights to shine down on the Christmas trees," he said. ...
+                <a href="http://www.idahofestivaloflights.org/our-history.html" id="article-link">Continue Reading</a>
             </p>
         </section>
         <section id="contact">
@@ -127,5 +134,6 @@
     </footer>
     <script src="scripts/webfontloader.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/townsdata.js"></script>
 </body>
 </html>

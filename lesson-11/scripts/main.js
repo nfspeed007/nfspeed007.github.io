@@ -37,8 +37,10 @@ function toggleMenu() {
     document.querySelector(".navigation").classList.toggle("responsive");
 }
 
+function getCurrentWeather(cityId) {
+
 // hero weather data
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ed727a759e7ac69ef5e052c8da5f94d9&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=ed727a759e7ac69ef5e052c8da5f94d9&units=imperial";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -66,9 +68,12 @@ fetch(apiURL)
     document.querySelector('#weatherImg').setAttribute('src', imgURL);
     document.querySelector('#weatherImg').setAttribute('alt', jsObject.weather[0].main);
   });
+}
+
+function getFiveDayForecast(cityId) {
 
 // five day forecast data
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ed727a759e7ac69ef5e052c8da5f94d9&units=imperial";
+const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=ed727a759e7ac69ef5e052c8da5f94d9&units=imperial";
 
 fetch(apiURL2)
   .then((response) => response.json())
@@ -94,7 +99,7 @@ fetch(apiURL2)
         );
     }
   );
-
+}
 // pancake banner
 const currentDate = new Date();
 const aside = document.querySelector('aside');

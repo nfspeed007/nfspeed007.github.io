@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The start of the Preston Page for Sweet 'N' Salty Weather">
+    <title>Preston Page</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body onload="getEvents('Fish Haven'); getCurrentWeather('5585010'); getFiveDayForecast('5585010')">
+    <header>
+        <img src="images/weather_icon.png" alt="weather logo">
+        <div class="header">
+            <h1 id="website">Sweet 'N' Salty Weather</h1>
+            <h3>We satisfy your excitment</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="preston">Fish Haven</h1>
+        <section id="hero">
+            <img src="images/fishbearlake.jpg" alt="soda springs trail">
+            <!--<picture>
+                <source srcset="images/hero_small.jpg" media ="(max-width: 500px)">
+                <source srcset="images/hero_medium.jpg" media="(max-width: 780px)">
+                <source srcset="images/hero_large.jpg" media="(max-width: 1050px)">
+                <img src="images/hero_large.jpg" alt="hero image">
+            </picture>-->
+            <article id="weather-summary">
+                <h2>Weather Summary</h2>
+                <div>
+                    <span id="weatherDesc"></span>
+                    <img id="weatherImg" src="" alt="" >
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="current-temp"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill"></span>
+                </div>
+            </article>
+            <!--<aside>
+                <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+            </aside>-->
+        </section>
+        <section id="five-day-forecast">
+            <table>
+                <tr>
+                    <th colspan="5">Five Day Forecast</th>
+                </tr>
+                <tr>
+                    <td id="day1"></td>
+                    <td id="day2"></td>
+                    <td id="day3"></td>
+                    <td id="day4"></td>
+                    <td id="day5"></td>
+                </tr>
+                <tr>
+                    <td><img id="img1" src="" alt=""></td>
+                    <td><img id="img2" src="" alt=""></td>
+                    <td><img id="img3" src="" alt=""></td>
+                    <td><img id="img4" src="" alt=""></td>
+                    <td><img id="img5" src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td id="temp1"></td>
+                    <td id="temp2"></td>
+                    <td id="temp3"></td>
+                    <td id="temp4"></td>
+                    <td id="temp5"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="events">
+            <h3>Upcoming Events:</h3>
+            <hr>
+            <ul id="event">
+            </ul>
+        </section>
+        <section id="article">
+            <img src="images/fish-haven.jpg" alt="Soda Springs, ID">
+            <h3>Little Fish Haven, Idaho is paradise for residents</h3>
+            <p>
+                FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake. <br><br>
+                In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles. <br><br>
+                But they don't live there. It's different living in Fish Haven. <br><br>
+                The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains. <br><br>
+                It's not technically a city or a town, it's really nothing more than the proverbial wide spot in the road. But people call it a town even though there isn't a city council, just the Bear Lake County Commission that oversees development there. ... 
+                <a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents" id="article-link">Continue Reading</a>
+            </p>
+        </section>
+        <section id="contact">
+            <address>
+                <h3>Sweet 'N' Salty Weather</h3> <br>
+                9587 Downtown BLVD <br>
+                Pocatello, ID 83201 <br>
+                203-203-2032 <br>
+                weather@hotmail.com
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6852.491796983724!2d-111.4004906719716!3d42.038040166839274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e1!3m2!1sen!2sus!4v1584816495932!5m2!1sen!2sus" 
+            width="600" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Sweet 'N' Salty Weather &FilledSmallSquare; <span id="currentDate"></span> &FilledSmallSquare; Tyler Israelsen</p>
+    </footer>
+    <script src="scripts/webfontloader.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/townsdata.js"></script>
+</body>
+</html>

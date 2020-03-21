@@ -167,6 +167,12 @@ article img {
     width: 100%;
 }
 
+p a:hover {
+    color: #9D866B;
+    background-color: #f1f4f3;
+    padding: 2px 2px;
+}
+
 /* class selectors */
 
 img[data-src] {
