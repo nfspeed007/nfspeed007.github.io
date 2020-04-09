@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The temple inn & suites">
+    <title>Reservation Page</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#"><img src="images/inn&suiteslogo.png" alt="company logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html" >Temple</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservation.html" id="active">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Make a Reservation</h1>
+        <form action="thanks.html" method="GET">
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="email@hotmail.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div>
+                <label for="state">State: </label>
+                <select name="state" id="state">
+                    <option value="" selected disabled>Select State</option>
+                    <option value="alabama">AL</option>
+                    <option value="alaska">AK</option>
+                    <option value="arizona">AZ</option>
+                    <option value="arkansas">AR</option>
+                    <option value="california">CA</option>
+                    <option value="colorado">CO</option>
+                    <option value="connecticut">CT</option>
+                    <option value="delaware">DE</option>
+                    <option value="florida">FL</option>
+                    <option value="georgia">GA</option>
+                    <option value="hawaii">HI</option>
+                    <option value="idaho">ID</option>
+                    <option value="illinois">IL</option>
+                    <option value="indiana">IN</option>
+                    <option value="iowa">IA</option>
+                    <option value="kansas">KS</option>
+                    <option value="kentucky">KY</option>
+                    <option value="louisiana">LA</option>
+                    <option value="maine">ME</option>
+                    <option value="maryland">MD</option>
+                    <option value="massachusetts">MA</option>
+                    <option value="michigan">MI</option>
+                    <option value="minnesota">MN</option>
+                    <option value="mississippi">MS</option>
+                    <option value="missouri">MO</option>
+                    <option value="montana">MT</option>
+                    <option value="nebraska">NE</option>
+                    <option value="nevada">NV</option>
+                    <option value="new hampshire">NH</option>
+                    <option value="new jersey">NJ</option>
+                    <option value="new mexico">NM</option>
+                    <option value="new york">NY</option>
+                    <option value="north carolina">NC</option>
+                    <option value="north dakota">ND</option>
+                    <option value="ohio">OH</option>
+                    <option value="oklahoma">OK</option>
+                    <option value="oregon">OR</option>
+                    <option value="pennsylvania">PA</option>
+                    <option value="rhode island">RI</option>
+                    <option value="south carolina">SC</option>
+                    <option value="south dakota">SD</option>
+                    <option value="tennessee">TN</option>
+                    <option value="texas">TX</option>
+                    <option value="utah">UT</option>
+                    <option value="vermont">VT</option>
+                    <option value="virginia">VA</option>
+                    <option value="washington">WA</option>
+                    <option value="west virginia">WV</option>
+                    <option value="wisconsin">WI</option>
+                    <option value="wyoming">WY</option>
+                </select>
+            </div>
+            <div>
+                <label for="adults">Adults: </label>
+                <input type="number" name="adults" id="adults" min="1" max="15">
+                <label for="children">Children: </label>
+                <input type="number" name="children" id="children" min="1" max="20">
+            </div>
+            <div>
+                <label for="location">Location: </label>
+                <label for="">
+                    <input type="radio" name="nauvoo" id="location">
+                    Nauvoo
+                </label>
+                <label for="">
+                    <input type="radio" name="palmyra" id="location">
+                    Palmyra
+                </label>
+                <label for="">
+                    <input type="radio" name="provo" id="location">
+                    Provo
+                </label>
+                <label for="">
+                    <input type="radio" name="chicago" id="location">
+                    Chicago
+                </label>
+            </div>
+            <div>
+                <label for="checkIn">Check In: </label>
+                <input type="date" name="checkIn" id="checkIN">
+                <label for="checkOut">Check Out: </label>
+                <input type="date" name="checkOut" id="checkOut">
+            </div>
+            <div>
+                <label for="roomType">Room Type: </label>
+                <select name="roomType" id="roomType">
+                    <option value="" selected disabled>Select Room Type</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="double-double">Double-double</option>
+                    <option value="queen">Queen</option>
+                    <option value="king">King</option>
+                    <option value="studio">Studio</option>
+                    <option value="suite">Suite</option>
+                    <option value="mini-suite">Mini Suite</option>
+                </select>
+                <label for="numberOfRooms">Number of Rooms: </label>
+                <input type="number" name="numberOfRooms" id="numberOfRooms" min="1" max="3">
+                <label for="connectingRoom">Connecting Room: </label>
+                <label for="">
+                    <input type="radio" name="yes" id="connectingRoom">
+                    Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="no" id="connectingRoom">
+                    No
+                </label>
+            </div>
+            <div>
+                <label for="specialComments">Special Accommidations/Comments: </label>
+                <textarea name="specialComments" id="specialComments" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <section id="contact">
+            <address>
+                <h3>Temple Inn & Suites</h3> <br>
+                4800 Montgomery Ln #300 <br>
+                Bethesda, MD 20814 <br>
+                555-123-4567 <br>
+                templeinnsuites@gmail.com
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.999554029661!2d-77.09772048435121!3d38.98325177955741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e1!3m2!1sen!2sus!4v1586396291483!5m2!1sen!2sus" 
+            width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Temple Inn & Suites &starf; <span id="currentDate"></span> &starf; Tyler Israelsen</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The temple inn & suites">
+    <title>Temple Page</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body onload ="getCurrentWeather('4903330'); getCurrentWeather1('5130441'); getCurrentWeather2('5780026'); getCurrentWeather3('4893886')">
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#"><img src="images/inn&suiteslogo.png" alt="company logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html" id="active">Temple</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Temples</h1>
+        <section id="temple1">
+            <div>
+            <article>
+                <img src="images/nauvoo_temple_lds.jpg" alt="navuoo temple">
+            </article>
+            <article id="weather-summary">
+                <h2>Weather Summary</h2>
+                <div>
+                    <span id="weatherDesc"></span>
+                    <img id="weatherImg" src="" alt="" >
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="current-temp"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill"></span>
+                </div>
+            </article>
+        </div>
+            <article>
+                <h2 id="templeIl"></h2>
+                <h3>Address</h3>
+                <p id="addressIl"></p>
+                <h3>Telephone</h3>
+                <p id="phoneIl"></p>
+                <h3>Email</h3>
+                <p id="emailIl"></p>
+                <h3>Services</h3>
+                <p id="servicesIl"></p>
+                <h3>Ordinance Schedule</h3>
+                <p>Inititory: <span id=ordinanceIl1></span></p>
+                <p>Endownment: <span id=ordinanceIl2></span></p>
+                <p>Sealings: <span id=ordinanceIl3></span></p>
+                <h3>Closures</h3>
+                <p id="closureIl"></p>
+                <h3>History</h3>
+                <p><span id="historyIl1"></span> - <span id="historyIl1_1"></span></p>
+                <p><span id="historyIl2"></span> - <span id="historyIl2_1"></span></p>
+                <p><span id="historyIl3"></span> - <span id="historyIl3_1"></span></p>
+            </article>
+        </section>
+        <section id="temple2">
+            <div>
+            <article>
+                <img src="images/palmyra_temple_lds.jpeg" alt="palmyra temple">
+            </article>
+            <article id="weather-summary1">
+                <h2>Weather Summary</h2>
+                <div>
+                    <span id="weatherDesc1"></span>
+                    <img id="weatherImg1" src="" alt="" >
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="current-temp1"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed1"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span id="humidity1"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill1"></span>
+                </div>
+            </article>
+        </div>
+                <article>
+                <h2 id="templeNy"></h2>
+                <h3>Address</h3>
+                <p id="addressNy"></p>
+                <h3>Telephone</h3>
+                <p id="phoneNy"></p>
+                <h3>Email</h3>
+                <p id="emailNy"></p>
+                <h3>Services</h3>
+                <p id="servicesNy"></p>
+                <h3>Ordinance Schedule</h3>
+                <p>Inititory: <span id="ordinanceNy1"></span></p>
+                <p>Endownment: <span id="ordinanceNy2"></span></p>
+                <p>Sealings: <span id="ordinanceNy3"></span></p>
+                <h3>Closures</h3>
+                <p id="closureNy"></p>
+                <h3>History</h3>
+                <p><span id="historyNy1"></span> - <span id="historyNy1_1"></span></p>
+                <p><span id="historyNy2"></span> - <span id="historyNy2_1"></span></p>
+                <p><span id="historyNy3"></span> - <span id="historyNy3_1"></span></p>
+            </article>
+        </section>
+        <section id="temple3">
+            <div>
+            <article>
+                <img src="images/provo_city_center_temple.jpg" alt="provo city center temple">
+            </article>
+            <article id="weather-summary2">
+                <h2>Weather Summary</h2>
+                <div>
+                    <span id="weatherDesc2"></span>
+                    <img id="weatherImg2" src="" alt="" >
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="current-temp2"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed2"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span id="humidity2"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill2"></span>
+                </div>
+            </article>
+        </div>
+            <article>
+                <h2 id="templeP"></h2>
+                <h3>Address</h3>
+                <p id="addressP"></p>
+                <h3>Telephone</h3>
+                <p id="phoneP"></p>
+                <h3>Email</h3>
+                <p id="emailP"></p>
+                <h3>Services</h3>
+                <p id="servicesP"></p>
+                <h3>Ordinance Schedule</h3>
+                <p>Inititory: <span id="ordinanceP1"></span></p>
+                <p>Endownment: <span id="ordinanceP2"></span></p>
+                <p>Sealings: <span id="ordinanceP3"></span></p>
+                <h3>Closures</h3>
+                <p id="closureP"></p>
+                <h3>History</h3>
+                <p><span id="historyP1"></span> - <span id="historyP1_1"></span></p>
+                <p><span id="historyP2"></span> - <span id="historyP2_1"></span></p>
+                <p><span id="historyP3"></span> - <span id="historyP3_1"></span></p>
+            </article>
+        </section>
+        <section id="temple4">
+            <div>
+            <article>
+                <img src="images/chicago_temple_lds.jpeg" alt="chicago temple">
+            </article>
+            <article id="weather-summary3">
+                <h2>Weather Summary</h2>
+                <div>
+                    <span id="weatherDesc3"></span>
+                    <img id="weatherImg3" src="" alt="" >
+                </div>
+                <div>
+                    <span>Current Temperature:</span>
+                    <span id="current-temp3"></span>
+                </div>
+                <div>
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed3"></span>
+                </div>
+                <div>
+                    <span>Humidity:</span>
+                    <span id="humidity3"></span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="windChill3"></span>
+                </div>
+            </article>
+        </div>
+            <article>
+                <h2 id="templeC"></h2>
+                <h3>Address</h3>
+                <p id="addressC"></p>
+                <h3>Telephone</h3>
+                <p id="phoneC"></p>
+                <h3>Email</h3>
+                <p id="emailC"></p>
+                <h3>Services</h3>
+                <p id="servicesC"></p>
+                <h3>Ordinance Schedule</h3>
+                <p>Inititory: <span id="ordinanceC1"></span></p>
+                <p>Endownment: <span id="ordinanceC2"></span></p>
+                <p>Sealings: <span id="ordinanceC3"></span></p>
+                <h3>Closures</h3>
+                <p id="closureC"></p>
+                <h3>History</h3>
+                <p><span id="historyC1"></span> - <span id="historyC1_1"></span></p>
+                <p><span id="historyC2"></span> - <span id="historyC2_1"></span></p>
+                <p><span id="historyC3"></span> - <span id="historyC3_1"></span></p>
+            </article>
+        </section>
+        <section id="contact">
+            <address>
+                <h3>Temple Inn & Suites</h3> <br>
+                4800 Montgomery Ln #300 <br>
+                Bethesda, MD 20814 <br>
+                555-123-4567 <br>
+                templeinnsuites@gmail.com
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.999554029661!2d-77.09772048435121!3d38.98325177955741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e1!3m2!1sen!2sus!4v1586396291483!5m2!1sen!2sus" 
+            width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Temple Inn & Suites &starf; <span id="currentDate"></span> &starf; Tyler Israelsen</p>
+    </footer>
+    <script src="scripts/temple.js"></script>
+    <script src="scripts/templeWeather.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

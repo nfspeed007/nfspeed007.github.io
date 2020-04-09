@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The temple inn & suites">
+    <title>Reservation Page</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#"><img src="images/inn&suiteslogo.png" alt="company logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html" >Temple</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html" id="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Make a Reservation</h1>
+        <form action="thanks.html" method="GET">
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="email@hotmail.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div>
+                <label for="hotelRating">Rating: </label>
+                <input type="range" id="hotelRating" name="hotelRating" min="1" max="5" step="1" value="3" 
+                list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="rating">3</span>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                </datalist>
+            </div>
+            <div>
+                <label for="concern">Concern: </label>
+                <select name="concern" id="concern">
+                    <option value="" selected disabled>Pick a reason</option>
+                    <option value="queston">I have a question</option>
+                    <option value="concern">I have a concern</option>
+                    <option value="suggestion">I have a suggestion</option>
+                    <option value="makeReservation">I need to make a reservation</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="comments">Comments/Concerns: </label>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <section id="contact">
+            <address>
+                <h3>Temple Inn & Suites</h3> <br>
+                4800 Montgomery Ln #300 <br>
+                Bethesda, MD 20814 <br>
+                555-123-4567 <br>
+                templeinnsuites@gmail.com
+            </address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.999554029661!2d-77.09772048435121!3d38.98325177955741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e1!3m2!1sen!2sus!4v1586396291483!5m2!1sen!2sus" 
+            width="600" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Temple Inn & Suites &starf; <span id="currentDate"></span> &starf; Tyler Israelsen</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+{
+"temples": [
+    {
+        "templeName": "Nauvoo Illinois Temple",
+        "streetLine1": "50 N Wells St",
+        "streetLine2": "",
+        "city": "Nauvoo",
+        "state": "IL",
+        "country": "United States",
+        "zipcode": "62354",
+        "telephone": "(1) 217-453-6252",
+        "email": "NAUV2-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "No food services",
+            "Clothing rental available",
+            "No distribution center",
+            "No patron housing"
+        ],
+        "history": [
+            {
+                "date": "4 April 1999",
+                "milestone": "Announced"
+            },
+            {
+                "date": "24 October 1999",
+                "milestone": "Groundbreaking"
+            },
+            {
+                "date": "27 June 2002",
+                "milestone": "Dedicated"
+            }
+        ],
+        "schedule":
+        {
+            "initiatory": "Tuesday - Saturday",
+            "endowment": "Tuesday - Saturday",
+            "sealings": "Tuesday - Saturday"
+        },
+        "closures": [
+            "Saturday, March 21 - Thursday April 30",
+            "Saturday, October 3",
+            "Tuesday, November 10 - Saturday, November 21",
+            "Wednesday, November 25 - Thursday, November 26",
+            "Friday, December 25"
+        ]
+    },
+    {
+        "templeName": "Palmyra New York Temple",
+        "streetLine1": "2720 Temple Rd",
+        "streetLine2": "",
+        "city": "Palmyra",
+        "state": "NY",
+        "country": "United States",
+        "zipcode": "14522-9573",
+        "telephone": "(1) 315-597-6001",
+        "email": "PALMY-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "No food services",
+            "No clothing rental",
+            "Distribution center available",
+            "No patron housing"
+        ],
+        "history": [
+            {
+                "date": "21 February 1999",
+                "milestone": "Announced"
+            },
+            {
+                "date": "25 May 1999",
+                "milestone": "Groundbreaking"
+            },
+            {
+                "date": "6 April 2000",
+                "milestone": "Dedicated"
+            }
+        ],
+        "schedule":
+        {
+            "initiatory": "Tuesday - Saturday",
+            "endowment": "Tuesday - Saturday",
+            "sealings": "Tuesday - Saturday"
+        },
+        "closures": [
+            "Saturday, March 21 - Thursday April 30",
+            "Saturday, July 4",
+            "Monday, September 7 - Saturday, September 19",
+            "Saturday, October 3",
+            "Thursday, November 26",
+            "Thursday, December 24",
+            "Friday, December 25",
+            "Thursday, December 31"
+        ]
+    },
+    {
+        "templeName": "Provo City Center Temple",
+        "streetLine1": "50 South University Ave",
+        "streetLine2": "",
+        "city": "Provo",
+        "state": "UT",
+        "country": "United States",
+        "zipcode": "84601",
+        "telephone": "(1) 801-343-2700",
+        "email": "PROCC-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "No food services",
+            "Clothing rental available",
+            "Distribution center nearby",
+            "No patron housing"
+        ],
+        "history": [
+            {
+                "date": "1 October 2011",
+                "milestone": "Announced"
+            },
+            {
+                "date": "12 May 2012",
+                "milestone": "Groundbreaking"
+            },
+            {
+                "date": "20 March 2016",
+                "milestone": "Dedicated"
+            }
+        ],
+        "schedule":
+        {
+            "initiatory": "Tuesday - Saturday",
+            "endowment": "Tuesday - Saturday",
+            "sealings": "Tuesday - Saturday"
+        },
+        "closures": [
+            "Tuesday, March 26 - Thursday April 30",
+            "Monday, June 22 - Monday, July 6",
+            "Friday, July 24",
+            "Saturday, October 3",
+            "Wednesday, November 25 (Limited hours)",
+            "Thursday, November 26",
+            "Monday, November 30 - Monday, December 14",
+            "Thursday, December 24 - Friday, December 25",
+            "Thursday, December 31, 2020 - Friday, January 1, 2021"
+        ]
+    },
+    {
+        "templeName": "Chicago Illinois Temple",
+        "streetLine1": "4151 W Lake Ave",
+        "streetLine2": "",
+        "city": "Glenview",
+        "state": "IL",
+        "country": "United States",
+        "zipcode": "60025-1240",
+        "telephone": "(1) 847-299-6500",
+        "email": "CHICA-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "No food services",
+            "Clothing rental available",
+            "Distribution center available",
+            "No patron housing"
+        ],
+        "history": [
+            {
+                "date": "1 April 1981",
+                "milestone": "Announced"
+            },
+            {
+                "date": "13 August 1983",
+                "milestone": "Groundbreaking"
+            },
+            {
+                "date": "9 August 1985",
+                "milestone": "Dedicated"
+            },
+            {
+                "date": "8 October 1989",
+                "milestone": "rededicated"
+            }
+        ],
+        "schedule":
+        {
+            "initiatory": "Tuesday - Saturday",
+            "endowment": "Tuesday - Saturday",
+            "sealings": "Tuesday - Saturday"
+        },
+        "closures": [
+            "Saturday, March 20 - Thursday April 27",
+            "Tuesday, April 28 - Thursday, July 9",
+            "Saturday, October 3",
+            "Thursday, December 24 - Friday, December 25",
+            "Thursday, December 31 2020 - Friday, January 1, 2021"
+        ]
+    }
+]
+}

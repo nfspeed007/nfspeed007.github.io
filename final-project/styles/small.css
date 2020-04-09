@@ -1,0 +1,258 @@
+/*
+* base css
+* smartphone/mobile css
+*/
+
+/* html selectors */
+body {
+    background-color: #d0e4f2;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #d0e4f2;
+}
+
+ul li a:link {
+    color: #d0e4f2;
+}
+
+ul li a:visited {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #8087b1;
+    text-decoration: underline;
+}
+
+
+nav ul {
+    list-style: none;
+    background-color: #312d32;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+nav ul li img {
+    width: 11%;
+    position: absolute;
+    background-color: white;
+    left: 190px;
+    top: -45px;
+}
+
+nav {
+    padding-top: 30px;
+}
+
+footer {
+    background-color: #312d32;
+    height: 80px;
+    text-align: center;
+}
+
+footer p {
+    padding: 30px;
+    color: #d0e4f2;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+h1, h2, h3 {
+    color: #5b659d;
+}
+
+article p, label, address, .services ul {
+    color: #312d32;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1, h2, h3, ul {
+    font-family: 'Cormorant Upright', serif;
+}
+
+section {
+    border: 2px solid #806277;
+    box-shadow: 0 0 40px 0 #806277;
+    margin-top: 25px;
+    padding: 20px;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+p, span, form, address {
+    font-family: 'Dosis', sans-serif;
+}
+
+section article img {
+    width: 80%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    display: inline-flex;
+    margin: 10px;
+}
+
+label {
+    display: inline-flex;
+    width: 135px;
+}
+
+input[type=submit], input[type=reset] {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 8px 8px;
+    background-color: #8087b1;
+    width: 80px;
+}
+
+iframe{
+    display: none;
+}
+
+/* class selector */
+
+.navigation li:first-child {
+    display: block;
+    text-align: right;
+}
+
+.navigation li {
+	display: none;
+}
+
+.responsive li {
+	display: block;
+}
+
+.services {
+    display: grid;
+    border: none;
+    grid-column-gap: 50px;
+    text-align: left;
+    box-shadow: none;
+}
+
+.services ul {
+    font-size: 18.5px;
+}
+
+.serve {
+    max-width: 1150px;
+}
+
+/* id selector */
+
+#active {
+    text-decoration: underline;
+    text-decoration-color: #8087b1;;
+}
+
+#hero {
+    display: block;
+    position: relative;
+}
+
+#summary {
+    font-size: larger;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#summary p {
+    color: #312d32;
+}
+
+#hero img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+#bookNow {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: #312d32;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px outset #8087b1;
+}
+
+#bookNow a {
+    text-decoration: none;
+    color: #d0e4f2;
+    font-size: 22px;
+}
+
+#bookNow a:link {
+    color: #d0e4f2;
+}
+
+#bookNow a:visited {
+    text-decoration: none;
+}
+
+#bookNow a:hover {
+    color: #8087b1;
+    text-decoration: underline;
+}
+
+#templeSummary {
+    align-items: center;
+}
+
+#contact address {
+    display: grid;
+    justify-content: center;
+}
+
+#one, #two, #three {
+    border: 2px solid #806277;
+    box-shadow: 0 0 40px 0 #806277;
+}
+
+#weather-summary, #weather-summary1, #weather-summary2, #weather-summary3 {
+    background-color: #8087b1;
+    color: #f1f4f3;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+#weather-summary img, #weather-summary1 img, #weather-summary2 img, #weather-summary3 img {
+    width: 40%;
+    padding: 0px;
+    margin: 0;
+}
